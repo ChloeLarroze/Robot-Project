@@ -1,6 +1,7 @@
 # Autonomous Robot Project
 
 ## Description
+![Capture_d_écran_2024-10-01_à_17 35 53-removebg-preview](https://github.com/user-attachments/assets/e4b4387f-f48b-4eae-b959-61e0dc49adde)
 
 This project focuses on designing and building an autonomous robot capable of receiving commands via Bluetooth and navigating independently while avoiding obstacles. The robot is programmed to meet specific requirements, including obstacle avoidance, battery management, and the ability to resume its path after any interruptions.
 
@@ -36,7 +37,7 @@ This project focuses on designing and building an autonomous robot capable of re
 
 The goal of this project is to design and implement a fully autonomous robot as part of an embedded systems course. The robot interacts with a mobile phone via Bluetooth for user commands, automatically avoids obstacles, manages its battery levels, and resumes its previous path after stopping.
 
-![Robot Overview](./pics/truc/robot_overview.png)
+![Robot Overview](./pics/vue_robot.png)
 
 ## Hardware Configuration
 
@@ -48,7 +49,7 @@ The robot is built using the following components:
 - **Motors**: To control the movement using PWM signals.
 - **Battery and Monitoring Circuit**: For power management.
 
-![Hardware Diagram](./pics/truc/hardware_diagram.png)
+For more information, see the flowchart. 
 
 ## Software Overview
 
@@ -56,7 +57,7 @@ The robot is built using the following components:
 
 The robot’s hardware is controlled through a carefully mapped pin configuration in CubeIDE. The pins are configured to handle the motors, IR sensors, and communication peripherals.
 
-![Pin Configuration](./pics/truc/pin_configuration.png)
+![Pin Configuration](./pics/pinout.png)
 
 ### PWM Signal Configuration
 
@@ -75,8 +76,8 @@ Battery levels are monitored through an Analog Watchdog feature. When the batter
 ## Obstacle Avoidance System
 
 The obstacle detection system relies on four IR sensors placed around the robot. The sensors continuously scan for obstacles, and if the robot approaches within 20 cm of a wall, it executes an avoidance maneuver.
-
-![Obstacle Avoidance Flowchart](./pics/truc/obstacle_avoidance.png)
+![](./pics/mur.png)
+![Avoidance system](./pics/vue_robot.png)
 
 ---
 
@@ -92,6 +93,10 @@ Future improvements to this project could include:
 ## Testing and Results
 
 All the features, including Bluetooth control, PWM motor management, and obstacle avoidance, were thoroughly tested in various environments. The Bluetooth connection was stable even at a distance of 20 meters, and the PWM signals correctly controlled motor speed.
+
+![Led tests](./pics/test_led.png)
+![PWM engines tests](./pics/test_PWM_mot.png)
+![PWM acceleration tests](./pics/test_PWM_acce.png)
 
 ---
 
