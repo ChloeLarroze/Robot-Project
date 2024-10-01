@@ -5,6 +5,9 @@
 
 This project focuses on designing and building an autonomous robot capable of receiving commands via Bluetooth and navigating independently while avoiding obstacles. The robot is programmed to meet specific requirements, including obstacle avoidance, battery management, and the ability to resume its path after any interruptions.
 
+
+**The following explanation is only a summarized version of the project. For more details, feel free to consult the report (in French), which explains the operation of each subcomponent in more detail.**
+
 ## Key Features
 
 - **Bluetooth Control**: The robot can be controlled via a mobile application using Bluetooth to move forward, turn left or right.
